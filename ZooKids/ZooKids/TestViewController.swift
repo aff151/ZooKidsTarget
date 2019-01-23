@@ -97,11 +97,11 @@ class TestViewController: ViewController {
     override func viewDidLoad() {
         navigationController?.navigationBar.barTintColor = UIColor(red:0.56, green:0.91, blue:0.85, alpha:1.0)
         super.viewDidLoad()
-        if app == 1{
+        #if LPS1
             mostrar_botones()
-        }else{
+        #else
             calcular_correcta_nuevo();
-        }
+        #endif
         
         
         // Do any additional setup after loading the view.
@@ -303,7 +303,7 @@ class TestViewController: ViewController {
     
     
     @IBAction func siguiente_animal(sender: UIButton) {
-        if app == 2{
+        #if LPS2
             if estadoAnimal == 5{
                 print(animales);
                 print("ESTE ES EL ULTIMO ANIMAL, POR LO QUE SE NAVEGA");
@@ -321,7 +321,7 @@ class TestViewController: ViewController {
                 self.presentViewController(controller, animated: true, completion: nil)
                 
             }
-        }else{
+        #else
             
             //se van a tener hasta 20 animales escogidos por lo que el contador va a estar a 20 y cuando llegue a 20, se tiene que ver qué hacer
             if seleccionada_alumno_1 != ""{
@@ -337,7 +337,7 @@ class TestViewController: ViewController {
             
             
         
-        }
+        #endif
         
         
         

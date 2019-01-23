@@ -11,7 +11,7 @@ import CoreData
 
 
 var administrador = false;
-var app = 1;
+//var app = 1;
 var animales_tipo = Dictionary<Int,[String]>()
 
 class Inicio_de_sesionViewController: UIViewController {
@@ -33,7 +33,16 @@ class Inicio_de_sesionViewController: UIViewController {
             //self.crear_fallos()
             
         }
-        
+        #if LPS1
+            print("asdasdasd1")
+            print("asdasdasd1")
+            print("asdasdasd1")
+        #else
+            print("asdasdasd2")
+            print("asdasdasd2")
+            print("asdasdasd2")
+            print("asdasdasd2")
+        #endif
         //self.prueba() //Muestra el CoreData
     }
     

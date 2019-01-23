@@ -52,7 +52,7 @@ class PartidaViewController: ViewController {
             recordar = 2
         }
         
-        if app == 1{
+        #if LPS1
             
             if estadoAnimal==(-1){
                 escoger_animales_aleatoriamente_app1();
@@ -61,14 +61,14 @@ class PartidaViewController: ViewController {
             }else{
                 animalActual.text = "Animal "+String(estadoAnimal+1);
             }
-        }else{
+        #else
             if estadoAnimal==(-1){
                 escoger_animales_aleatoriamente();
                 estadoAnimal = 0;
             }else{
                 animalActual.text = "Animal "+String(estadoAnimal+1)+"/5";
             }
-        }
+            #endif
         
         
         //print("Se ejecuta ek accesi a ka varuavke de numeros")
