@@ -89,7 +89,7 @@ class PerfilNinioViewController: UIViewController {
         #if LPS1
             let graficaFinal = self.childViewControllers[1] as! ZooKids.graficaResumen
         #else
-            let graficaFinal = self.childViewControllers[1] as! ZooKids2.graficaResumen
+            let graficaFinal = self.childViewControllers[1] as! ZooKids.graficaResumen
         #endif
         graficaFinal.numAciertos = numAciertos
         graficaFinal.numFallos = numFallos
