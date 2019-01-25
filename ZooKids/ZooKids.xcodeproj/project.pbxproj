@@ -619,7 +619,7 @@
 				);
 				INFOPLIST_FILE = ZooKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "-D LPS2";
+				OTHER_SWIFT_FLAGS = "-D LPS1";
 				PRODUCT_BUNDLE_IDENTIFIER = ual.ZooKids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -635,7 +635,7 @@
 				);
 				INFOPLIST_FILE = ZooKids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "-D LPS2";
+				OTHER_SWIFT_FLAGS = "-D LPS1";
 				PRODUCT_BUNDLE_IDENTIFIER = ual.ZooKids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
